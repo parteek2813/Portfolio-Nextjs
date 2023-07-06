@@ -2,8 +2,8 @@ import Link from "next/link";
 
 // icons
 import {
-  RiYoutubeLine,
-  RiInstagramLine,
+  RiGithubLine,
+  RiLinkedinLine,
   RiFacebookLine,
   RiDribbbleLine,
   RiBehanceLine,
@@ -12,27 +12,24 @@ import {
 
 const Socials = () => {
   return (
-    <div>
+    <div className="flex items-center gap-x-5 text-lg">
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
+        <RiGithubLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
+        <RiLinkedinLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
+        <RiFacebookLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
+        <RiDribbbleLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
+        <RiBehanceLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
-      </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
+        <RiPinterestLine />
       </Link>
     </div>
   );
