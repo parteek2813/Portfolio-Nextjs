@@ -53,7 +53,7 @@ const Nav = () => {
                     {link.name}{" "}
                   </div>
 
-                  {/* triangle part here */}
+                  {/* triangle shape here */}
                   <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
                 </div>
               </div>
