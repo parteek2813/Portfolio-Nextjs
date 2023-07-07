@@ -24,6 +24,9 @@ import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+// counters
+import CountUp from "react-countup";
+
 //  data
 const aboutData = [
   {
@@ -115,21 +118,73 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center mt-[50px]">
-          <h2>
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2"
+          >
             🌟 Master of <span className="text-accent">Frontend Sorcery</span>{" "}
             Unleashing Digital Wizardry 🚀
-          </h2>
-          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0">
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0"
+          >
             I navigate the celestial highways of HTML, CSS, and JavaScript with
             cosmic ease, harnessing the power of cutting-edge frameworks like
             React & Angular. My toolbelt is adorned with celestial gems such as
             SASS, Bootstrap, and Tailwind CSS, ensuring your websites are as
             visually stunning as a celestial tapestry.
-          </p>
+          </motion.p>
 
           {/* counters */}
 
-          <div>counters</div>
+          <motion.div
+            variants={fadeIn("right", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+          >
+            <div className="flex flex-1 xl:gap-x-6">
+              {/* experience  */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
+                  <CountUp start={0} end={10} duration={5} /> +
+                </div>
+
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Years of experience
+                </div>
+              </div>
+              {/* clients */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
+                  <CountUp start={0} end={250} duration={5} /> +
+                </div>
+
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Satisfied Clients
+                </div>
+              </div>
+
+              {/* projects */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
+                  <CountUp start={0} end={40} duration={5} /> +
+                </div>
+
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Finished Projects
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         {/* bottom container-title-subtitle-icons */}
