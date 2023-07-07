@@ -112,9 +112,28 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="conatiner mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div>text</div>
-        <div>
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+        {/* text */}
+        <div className="flex-1 flex flex-col justify-center mt-[50px]">
+          <h2>
+            🌟 Master of <span className="text-accent">Frontend Sorcery</span>{" "}
+            Unleashing Digital Wizardry 🚀
+          </h2>
+          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0">
+            I navigate the celestial highways of HTML, CSS, and JavaScript with
+            cosmic ease, harnessing the power of cutting-edge frameworks like
+            React & Angular. My toolbelt is adorned with celestial gems such as
+            SASS, Bootstrap, and Tailwind CSS, ensuring your websites are as
+            visually stunning as a celestial tapestry.
+          </p>
+
+          {/* counters */}
+
+          <div>counters</div>
+        </div>
+
+        {/* bottom container-title-subtitle-icons */}
+        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-[50px]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -127,6 +146,29 @@ const About = () => {
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start ">
+            {aboutData[index].info.map((item, itemIndex) => {
+              return (
+                <div
+                  key={itemIndex}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                >
+                  {/* title */}
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div> {item.stage} </div>
+
+                  <div className="flex gap-x-4">
+                    {/* icons */}
+                    {item.icons?.map((icon, itemIndex) => {
+                      return <div className="text-2xl text-white">{icon}</div>;
+                    })}
+                  </div>
                 </div>
               );
             })}
