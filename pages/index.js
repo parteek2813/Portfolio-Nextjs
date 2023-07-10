@@ -25,7 +25,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 1000);
+    }, 1500);
 
     return () => {
       clearInterval(interval);
@@ -70,7 +70,7 @@ const Home = () => {
                   initial="hidden"
                   animate={activeIndex === 0 ? "show" : "hidden"}
                 >
-                  <span>Fullstack Developer</span>
+                  <span>Frontend Developer</span>
                 </motion.li>
                 <motion.li
                   className={`${styles.stackedLi} ${
@@ -94,8 +94,10 @@ const Home = () => {
                 </motion.li>
               </ul>
             </div>
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent"> Digital Reality</span>
+            <div className="text-[40px] mt-9">
+              Transforming Ideas <br /> Into{" "}
+              <span className="text-accent"> Digital Reality</span>
+            </div>
           </motion.h2>
           {/* subtitle */}
           <motion.p
@@ -105,9 +107,11 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Motivated and adaptable technology enthusiast driven by the pursuit
-            of new possibilities in diverse tech environments. Proficient in web
-            development, focused on problem-solving and driven by innovation.
+            🎯 Motivated and adaptable technology enthusiast driven by the
+            pursuit of new possibilities in diverse tech environments.
+            <br />
+            🚀 Proficient in web development, focused on problem-solving and
+            driven by innovation.
           </motion.p>
 
           {/* btns */}
