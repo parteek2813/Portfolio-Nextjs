@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 import {
   FaHtml5,
@@ -116,19 +117,19 @@ const aboutData = [
     ],
   },
   {
-    title: "credentials",
+    title: "certificates",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "App Development",
+        stage: "Andrew Ng- Coursera",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Neural Networks and Machine learning",
+        stage: "Rinex.AI",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Google cloud - Qwik Labs",
+        stage: "Google cloud",
       },
     ],
   },
@@ -273,8 +274,8 @@ const About = () => {
                     </div>
                   </div>
 
+                  {/* icons */}
                   <div className="flex gap-x-4">
-                    {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
                       return <div className="text-2xl text-white">{icon}</div>;
                     })}
