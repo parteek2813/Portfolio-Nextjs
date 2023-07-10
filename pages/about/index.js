@@ -76,15 +76,25 @@ const aboutData = [
     ],
   },
   {
-    title: "awards",
+    title: "Education",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Panjab University, Hoshiarpur ",
+        stage: "2020 - 2024",
+        standard: "BE (IT)",
+        marks: "8.30/10 CGPA",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Satyanand Public School, Gohana",
+        stage: "2019 - 2020",
+        standard: "Class 12th (PCM)",
+        marks: "91.4%",
+      },
+      {
+        title: "Satyanand Public School, Gohana",
+        stage: "2017 - 2018",
+        standard: "Class 10th",
+        marks: "92%",
       },
     ],
   },
@@ -246,9 +256,22 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div> {item.stage} </div>
+                  <div className="flex  flex-col mt-2">
+                    <div className="flex flex-row ">
+                      <div className="font-light mb-2  md:mb-0 ">
+                        {item.title}
+                      </div>
+                      <div className="hidden md:flex">-</div>
+                      <div className="ml-3"> {item.stage} </div>
+                    </div>
+
+                    <div className="flex flex-row ">
+                      <div className="font-light mb-2  md:mb-0">
+                        {item.standard}
+                      </div>
+                      <div className="ml-3 font-bold"> {item.marks} </div>
+                    </div>
+                  </div>
 
                   <div className="flex gap-x-4">
                     {/* icons */}
