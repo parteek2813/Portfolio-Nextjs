@@ -1,38 +1,102 @@
 // next image
 import Image from "next/image";
+import styles from "../styles/pages.module.css";
 
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
+import React from "react";
 
 // framer motion
 import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "../variants";
+import { useEffect, useState } from "react";
 
 // const Home = () => {
 //   return <div>I am working home </div>;
 // };
 
 const Home = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  const liVariants = {
+    hidden: {
+      opacity: 0,
+      y: -20,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
-          <motion.h1
+          <motion.h2
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="h1"
           >
+            <div className={styles.wrapper}>
+              <div className={styles.static}>I'm a </div>
+              <ul className={styles.dynamic}>
+                <motion.li
+                  className={`${styles.stackedLi} ${
+                    activeIndex === 0 ? styles.active : ""
+                  }`}
+                  variants={liVariants}
+                  initial="hidden"
+                  animate={activeIndex === 0 ? "show" : "hidden"}
+                >
+                  <span>Fullstack Developer</span>
+                </motion.li>
+                <motion.li
+                  className={`${styles.stackedLi} ${
+                    activeIndex === 1 ? styles.active : ""
+                  }`}
+                  variants={liVariants}
+                  initial="hidden"
+                  animate={activeIndex === 1 ? "show" : "hidden"}
+                >
+                  <span>Passionate Coder</span>
+                </motion.li>
+                <motion.li
+                  className={`${styles.stackedLi} ${
+                    activeIndex === 2 ? styles.active : ""
+                  }`}
+                  variants={liVariants}
+                  initial="hidden"
+                  animate={activeIndex === 2 ? "show" : "hidden"}
+                >
+                  <span>Web designer</span>
+                </motion.li>
+              </ul>
+            </div>
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent"> Digital Reality</span>
-          </motion.h1>
+          </motion.h2>
           {/* subtitle */}
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -41,9 +105,9 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Minim consequat voluptate dolor ut sint Lorem officia mollit ea
-            dolor ea proident amet laboris. Duis tempor tempor officia duis
-            irure .
+            Motivated and adaptable technology enthusiast driven by the pursuit
+            of new possibilities in diverse tech environments. Proficient in web
+            development, focused on problem-solving and driven by innovation.
           </motion.p>
 
           {/* btns */}

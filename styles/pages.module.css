@@ -1,0 +1,20 @@
+/* YourComponent.module.css */
+
+.wrapper {
+  position: relative;
+}
+
+.dynamic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 160px;
+}
+
+.stackedLi {
+  display: none;
+}
+
+.active {
+  display: block;
+}
