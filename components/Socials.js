@@ -17,20 +17,29 @@ const Socials = () => {
       <Link
         href={"https://github.com/parteek2813"}
         className="hover:text-accent transition-all duration-300"
+        legacyBehavior
       >
-        <RiGithubLine />
+        <a target="_blank" rel="noopender nore">
+          <RiGithubLine />
+        </a>
       </Link>
       <Link
         href={"https://www.linkedin.com/in/parteek-kumar-68881b15a/"}
         className="hover:text-accent transition-all duration-300"
+        legacyBehavior
       >
-        <RiLinkedinLine />
+        <a target="_blank" rel="noopender nore">
+          <RiLinkedinLine />
+        </a>
       </Link>
       <Link
         href={"https://leetcode.com/digitalparteek/"}
         className="hover:text-accent transition-all duration-300"
+        legacyBehavior
       >
-        <SiLeetcode />
+        <a target="_blank" rel="noopender nore">
+          <SiLeetcode />
+        </a>
       </Link>
       <Link
         href={"https://www.instagram.com/its__prateek28/"}
@@ -41,11 +50,20 @@ const Socials = () => {
       <Link
         href={"https://www.behance.net/parteekkumar7"}
         className="hover:text-accent transition-all duration-300"
+        legacyBehavior
       >
-        <RiBehanceLine />
+        <a target="_blank" rel="noopender nore">
+          <RiBehanceLine />
+        </a>
       </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiPinterestLine />
+      <Link
+        href={""}
+        className="hover:text-accent transition-all duration-300"
+        legacyBehavior
+      >
+        <a target="_blank" rel="noopender nore">
+          <RiPinterestLine />
+        </a>
       </Link>
     </div>
   );
