@@ -11,17 +11,27 @@ import {
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
   SiAdobephotoshop,
+  SiTypescript,
+  SiExpress,
+  SiSequelize,
+  SiPostman,
+  SiRabbitmq,
+  SiMongodb,
+  SiGit,
+  SiGithub,
+  SiMysql,
 } from "react-icons/si";
+
+import { BiLogoNodejs } from "react-icons/bi";
+import { TbBrandCpp } from "react-icons/tb";
 
 // componenets
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 // framer motion
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../../variants";
 
 // counters
@@ -33,20 +43,35 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Languages",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
+          <SiTypescript />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
           <FaJava />,
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaNodeJs />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: "Frameworks",
+        icons: [
+          <BiLogoNodejs />,
+          <SiExpress />,
+          <SiSequelize />,
+          <SiPostman />,
+          <SiRabbitmq />,
+          <SiMongodb />,
+        ],
+      },
+      {
+        title: "Developer Tools",
+        icons: [<SiGit />, <SiGithub />],
+      },
+      {
+        title: "Other",
+        icons: [<SiMysql />, <TbBrandCpp />],
       },
     ],
   },
@@ -101,20 +126,21 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
+
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left  ">
       <Circles />
       {/* avatar image */}
       <motion.div
         variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        initial={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 1 }}
+        className=" xl:flex absolute bottom-0 -left-[370px]"
       >
         <Avatar />
       </motion.div>
+
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center mt-[50px]">
@@ -155,11 +181,11 @@ const About = () => {
               {/* experience  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={2024} end={2024} />
                 </div>
 
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience
+                  Passing Year
                 </div>
               </div>
               {/* clients */}
