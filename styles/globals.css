@@ -18,10 +18,6 @@
   color: #f13024;
 }
 
-/* * {
-  cursor: none;
-} */
-
 @layer base {
   body {
     @apply bg-secondary overflow-hidden leading-relaxed;

@@ -17,10 +17,20 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 import { useEffect, useState } from "react";
+import ResumePopup from "../components/ResumePopup";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const title = "I'm a".split("");
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
+  const openResumePopup = () => {
+    setIsResumeOpen(true);
+  };
+
+  const closeResumePopup = () => {
+    setIsResumeOpen(false);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -136,7 +146,7 @@ const Home = () => {
               </motion.div>
 
               <div className="m-[60px] ">
-                <Link
+                <button
                   className="hover:bg-gray-700 text-[#64ffda] hover:text-[#64ffda] hover:text-gray-900 hover:border-gray-100"
                   style={{
                     border: "0.8px solid rgb(100, 255, 218)",
@@ -155,10 +165,11 @@ const Home = () => {
                     cursor: "pointer",
                     boxSizing: "border-box",
                   }}
-                  href={"/resume.pdf"}
+                  onClick={openResumePopup}
                 >
                   Resume
-                </Link>
+                </button>
+                {isResumeOpen && <ResumePopup onClose={closeResumePopup} />}
               </div>
             </div>
           </div>
