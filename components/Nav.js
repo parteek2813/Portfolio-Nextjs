@@ -8,6 +8,9 @@ import {
   HiEnvelope,
 } from "react-icons/hi2";
 
+// next image
+import Image from "next/image";
+
 //  navigation data
 export const navData = [
   { name: "home", path: "/", icon: <HiHome /> },

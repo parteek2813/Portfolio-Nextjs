@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import {
   FaHtml5,
@@ -149,7 +150,7 @@ const About = () => {
         exit={{ opacity: 1 }}
         className=" xl:flex absolute bottom-0 -left-[370px]"
       >
-        <Avatar />
+        <Image src={"/avatar.png"} width={737} height={678}></Image>
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
@@ -172,11 +173,18 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 xl:px-0"
           >
-            I navigate the celestial highways of HTML, CSS, and JavaScript with
-            cosmic ease, harnessing the power of cutting-edge frameworks like
-            React & Angular. My toolbelt is adorned with celestial gems such as
-            SASS, Bootstrap, and Tailwind CSS, ensuring your websites are as
-            visually stunning as a celestial tapestry.
+            <div className="text-lg text-rose-200	mt-2  ">
+              I'm a Frontend Web Developer building the Front-end of Websites
+              and Web Applications that leads to the success of the overall
+              product.
+            </div>
+            <div className=" text-lg text-rose-200 mt-6 ">
+              I navigate the celestial highways of HTML, CSS, and JavaScript
+              with cosmic ease, harnessing the power of cutting-edge frameworks
+              like React & Angular. My toolbelt is adorned with celestial gems
+              such as SASS, Bootstrap, and Tailwind CSS, ensuring your websites
+              are as visually stunning as a celestial tapestry.
+            </div>
           </motion.p>
 
           {/* counters */}
@@ -213,7 +221,7 @@ const About = () => {
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                  <CountUp start={0} end={40} duration={5} /> +
+                  <CountUp start={0} end={30} duration={5} /> +
                 </div>
 
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
