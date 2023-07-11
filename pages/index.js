@@ -5,6 +5,9 @@ import styles from "../styles/pages.module.css";
 // next link
 import Link from "next/link";
 
+// react-icons
+import { BiLinkExternal } from "react-icons/bi";
+
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
@@ -145,7 +148,7 @@ const Home = () => {
                 <ProjectsBtn />
               </motion.div>
 
-              <div className="m-[60px] ">
+              <div className="m-[60px] mr-[20px]">
                 <button
                   className="hover:bg-gray-700 text-[#64ffda] hover:text-[#64ffda] hover:text-gray-900 hover:border-gray-100"
                   style={{
@@ -171,6 +174,18 @@ const Home = () => {
                 </button>
                 {isResumeOpen && <ResumePopup onClose={closeResumePopup} />}
               </div>
+
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1YTxyfkl3iSDoLZDpQA3l9ywvY_Onw-vU/view?usp=sharing"
+                }
+                className="hover:text-accent transition-all duration-300 "
+                legacyBehavior
+              >
+                <a target="_blank" rel="noopender nore" className="mt-[70px]">
+                  <BiLinkExternal />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
