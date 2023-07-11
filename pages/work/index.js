@@ -22,17 +22,17 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-20 "
             >
-              My work <span className="text-accent"></span>
+              My Projects <span className="text-accent"></span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 "
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 mt-6"
             >
-              Veniam mollit culpa Lorem non quis exercitation laborum anim
-              proident. Laboris quis consectetur ad fugiat esse dolore.
+              Some of my projects using various stacks like Html, css, reactJs,
+              nextJs, Typescript, NodeJs
             </motion.p>
           </div>
           {/* slider */}

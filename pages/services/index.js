@@ -29,10 +29,10 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 mt-4 "
             >
-              Veniam mollit culpa Lorem non quis exercitation laborum anim
-              proident. Laboris quis consectetur ad fugiat esse dolore.
+              These are some of the technologies I love to dive into and
+              explore:
             </motion.p>
           </div>
           {/* slider */}

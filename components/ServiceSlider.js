@@ -24,27 +24,22 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: "Frontend",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Passionate about creating exceptional frontend experiences ",
   },
   {
     icon: <RxPencil2 />,
     title: "Backend",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Loves creating API's and managing databases",
   },
   {
     icon: <RxDesktop />,
     title: "App Dev",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Currently exploring the app Development with flutter",
   },
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "I possess strong expertise in SEO tech and strategies.",
   },
 ];
 

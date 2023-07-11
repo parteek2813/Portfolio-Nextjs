@@ -100,23 +100,23 @@ const aboutData = [
       },
     ],
   },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "experience",
+  //   info: [
+  //     {
+  //       title: "UX/UI Designer - XYZ Company",
+  //       stage: "2012 - 2023",
+  //     },
+  //     {
+  //       title: "Web Developer - ABC Agency",
+  //       stage: "2010 - 2012",
+  //     },
+  //     {
+  //       title: "Intern - DEF Corporation",
+  //       stage: "2008 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "certificates",
     info: [
@@ -166,7 +166,7 @@ const About = () => {
             🌟 Master of <span className="text-accent">Frontend Sorcery</span>{" "}
             Unleashing Digital Wizardry 🚀
           </motion.h2>
-          <motion.p
+          <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
@@ -185,7 +185,7 @@ const About = () => {
               such as SASS, Bootstrap, and Tailwind CSS, ensuring your websites
               are as visually stunning as a celestial tapestry.
             </div>
-          </motion.p>
+          </motion.div>
 
           {/* counters */}
 
