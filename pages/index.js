@@ -88,7 +88,7 @@ const Home = () => {
                     initial="hidden"
                     animate={activeIndex === 0 ? "show" : "hidden"}
                   >
-                    <span>Frontend Developer</span>
+                    <span>FullStack Developer</span>
                   </motion.li>
                   <motion.li
                     className={`${styles.stackedLi} ${
