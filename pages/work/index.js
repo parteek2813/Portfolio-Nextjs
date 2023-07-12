@@ -65,8 +65,7 @@ function Work2() {
           </div>
         </div>
 
-
-        <div className={styles.single}>
+        <div className={`${styles.single} ${styles.reverse}`}>
           <div className={styles.singleimg}>
             <img
             className={styles.img}
@@ -104,7 +103,7 @@ function Work2() {
             </div>
           </div>
         </div>
-        <div className={styles.single}>
+        <div className={`${styles.single} ${styles.reverse}`}>
           <div className={styles.singleimg}>
             <img
              className={styles.img}
@@ -138,12 +137,12 @@ function Work2() {
               Africa. They're Also Inter-Disciplinary With Various Academic
               Institutions Involved
             </p>
-            <div class="button-wrap">
+            <div class={styles.buttonwrap}>
               <button class={styles.button}>Visit &rarr;</button>
             </div>
           </div>
         </div>
-        <div className={styles.single}>
+        <div className={`${styles.single} ${styles.reverse}`}>
           <div className={styles.singleimg}>
             <img
               className={styles.img}
@@ -158,8 +157,8 @@ function Work2() {
               Look For Web3 Contributors Who Want To Make An Impact In The Web3
               Space
             </p>
-            <div class="button-wrap">
-              <button class="button">Visit &rarr;</button>
+            <div class={styles.buttonwrap}>
+              <button class={styles.button}>Visit &rarr;</button>
             </div>
           </div>
         </div>
@@ -178,8 +177,8 @@ function Work2() {
               After Signing In With Metamask. This Was A Follow-Up Tutorial By
               Pointer.gg
             </p>
-            <div class="button-wrap">
-              <button class="button">Visit &rarr;</button>
+            <div class={styles.buttonwrap}>
+              <button class={styles.button}>Visit &rarr;</button>
             </div>
           </div>
         </div>
