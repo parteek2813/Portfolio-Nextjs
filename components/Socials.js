@@ -57,7 +57,7 @@ const Socials = () => {
         </a>
       </Link>
       <Link
-        href={""}
+        href={"/"}
         className="hover:text-accent transition-all duration-300"
         legacyBehavior
       >
