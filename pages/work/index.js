@@ -3,7 +3,7 @@ import styles from "../../styles/work.module.scss";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 
 function Work2() {
   return (

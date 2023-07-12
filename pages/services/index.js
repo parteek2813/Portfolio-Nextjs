@@ -6,7 +6,7 @@ import Circles from "../../components/Circles";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 
 const Services = () => {
   return (

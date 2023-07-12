@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "../../variants";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 
 const Contact = () => {
   return (

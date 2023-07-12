@@ -38,7 +38,7 @@ import { fadeIn } from "../../variants";
 
 // counters
 import CountUp from "react-countup";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 
 //  data
 const aboutData = [
