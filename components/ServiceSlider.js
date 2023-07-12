@@ -29,7 +29,7 @@ const serviceData = [
   {
     icon: <RxPencil2 />,
     title: "Backend",
-    description: "Loves creating API's and managing databases",
+    description: "Loves creating API's and managing the databases ",
   },
   {
     icon: <RxDesktop />,

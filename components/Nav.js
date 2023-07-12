@@ -22,7 +22,6 @@ export const navData = [
     path: "/contact",
     icon: <HiEnvelope />,
   },
-  
 ];
 
 // next link
