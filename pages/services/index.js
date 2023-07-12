@@ -31,7 +31,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0 mt-4 "
             >
-              These are some of the technologies I love to dive into and
+              These are some of the technologies I love to <br />  dive deep into and
               explore:
             </motion.p>
           </div>
