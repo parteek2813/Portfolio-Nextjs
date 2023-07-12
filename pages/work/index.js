@@ -1,9 +1,11 @@
 import styles from "../../styles/work.module.scss";
+import Link from "next/link";
 
 
 function Work2() {
   return (
     <>
+    {/* work-section */}
     <div className={styles.work}>
       <div className={styles.header}>
       
@@ -38,6 +40,7 @@ function Work2() {
       </div>
 
 
+    {/* projects */}
       <div className={`${styles.projects} `}>
 
 
@@ -45,13 +48,13 @@ function Work2() {
           <div className={styles.singleimg}>
             <img
               className={styles.img}
-              src="https://ik.imagekit.io/onyedika/slide/calender_S6GI-SE7_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256123"
+              src="https://ik.imagekit.io/hceym0jw8l/tunespot.png?updatedAt=1689153242692"
               alt=""
             />
           </div>
           <div className={styles.singledetail}>
-            <h4 className="h4">Company Calender</h4>
-            <p className="p">
+            <h4 className={styles.h4}>TuneSpot- Music Player</h4>
+            <p className={styles.p4}>
               <span className="span">Problem:</span> Nigerian businesses across all sectors
               especially SME's struggle to comply with company legal
               regulations. <br />
@@ -60,7 +63,7 @@ function Work2() {
               their incorporated company without having to afford a lawyer.
             </p>
             <div className={styles.buttonwrap}>
-              <button className={styles.button}>Visit &rarr;</button>
+            <Link href="https://github.com/parteek2813/Tunespot-ReactJs"> <button className={styles.button}> Visit &rarr; </button></Link>
             </div>
           </div>
         </div>
@@ -74,8 +77,8 @@ function Work2() {
             />
           </div>
           <div className={styles.singledetail}>
-            <h4 className="h4">Pipar</h4>
-            <p className="p">
+            <h4 className={styles.h4}>Pipar</h4>
+            <p className={styles.p4}>
               A Digital Web3 Platform For Tokenizing Company Shares/Stocks.
               These Assets Can Be Fungible Or Non-Fungible
             </p>
@@ -88,13 +91,13 @@ function Work2() {
           <div className={styles.singleimg}>
             <img
              className={styles.img}
-              src="https://ik.imagekit.io/onyedika/slide/movie_Si8QWOouP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256396"
+              src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2320_.png?updatedAt=1689153681013"
               alt=""
             />
           </div>
           <div className={styles.singledetail}>
-            <h4 className="h4">React Movie</h4>
-            <p className="p">
+            <h4 className={styles.h4}>React Movie</h4>
+            <p className={styles.p4}>
               Stay Upto Date With Trending Movies, See The Authors Of These
               Movies And Their Casts. Also View The Ratings!
             </p>
@@ -107,13 +110,13 @@ function Work2() {
           <div className={styles.singleimg}>
             <img
              className={styles.img}
-              src="https://ik.imagekit.io/onyedika/slide/natour_QGZwpr7Ta.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256510"
+              src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2321_.png?updatedAt=1689153943360"
               alt=""
             />
           </div>
           <div className={styles.singledetail}>
-            <h4 className="h4">Natour</h4>
-            <p className="p">
+            <h4 className={styles.h4}>Natour</h4>
+            <p className={styles.p4}>
               A Platform That Helps You Discover The Most Intriguing Locations
               For Your Vacations. Book Hotels And Spa's At A Cheaper Rate
             </p>
@@ -126,13 +129,13 @@ function Work2() {
           <div className={styles.singleimg}>
             <img
             className={styles.img}
-              src="https://ik.imagekit.io/onyedika/slide/ncehr_GV14iEwWG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256179"
+              src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2322_.png?updatedAt=1689154304373"
               alt=""
             />
           </div>
           <div className={styles.singledetail}>
-            <h4 className="h4">Ncehr</h4>
-            <p className="p">
+            <h4 className={styles.h4}>Ncehr</h4>
+            <p className={styles.p4}>
               An NGO That Focuses On Solving The Problem Of Climate Change In
               Africa. They're Also Inter-Disciplinary With Various Academic
               Institutions Involved
@@ -146,13 +149,13 @@ function Work2() {
           <div className={styles.singleimg}>
             <img
               className={styles.img}
-              src="https://ik.imagekit.io/onyedika/slide/guvve_sUg2If5kc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256276"
+              src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2323_.png?updatedAt=1689154842879"
               alt=""
             />
           </div>
           <div className={styles.singledetail}>
-            <h4 className="h4">Gruvve</h4>
-            <p className="p">
+            <h4 className={styles.h4}>Gruvve</h4>
+            <p className={styles.p4}>
               Web3 Startup Accelerator, Both In Finance And Human Resource. They
               Look For Web3 Contributors Who Want To Make An Impact In The Web3
               Space
@@ -162,26 +165,7 @@ function Work2() {
             </div>
           </div>
         </div>
-        <div className={styles.single}>
-          <div className={styles.singleimg}>
-            <img
-              className={styles.img}
-              src="https://ik.imagekit.io/onyedika/slide/web3-forum_2lXPIycqd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256840"
-              alt=""
-            />
-          </div>
-          <div className={styles.singledetail}>
-            <h4 className="h4">Web3 Forum</h4>
-            <p className="p">
-              A Web3 Forum Built On Top Of Polygon. Anyone Can Add Comments
-              After Signing In With Metamask. This Was A Follow-Up Tutorial By
-              Pointer.gg
-            </p>
-            <div class={styles.buttonwrap}>
-              <button class={styles.button}>Visit &rarr;</button>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
     </>
