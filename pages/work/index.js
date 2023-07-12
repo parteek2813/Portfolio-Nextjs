@@ -3,6 +3,7 @@ import styles from "../../styles/work.module.scss";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import Footer from "../../components/footer";
 
 function Work2() {
   return (
@@ -65,9 +66,9 @@ function Work2() {
             <div className={styles.singledetail}>
               <h4 className={styles.h4}>Swiggy Clone</h4>
               <p className={styles.p}>
-                <span className={styles.span}>About:</span> A React.js web
-                application Swiggy Clone, a popular online food ordering and
-                delivery platform. <br />
+                <span className={styles.span}>About:</span> A popular online
+                food ordering and delivery platform, Swiggy Clone, implemented
+                as a React.js web application.. <br />
                 <br />
                 <span className={styles.span}>Tech Stack:</span> React, Redux,
                 Material UI, Firebase (OTP Authentication), React Router
@@ -256,6 +257,7 @@ function Work2() {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </>
   );
 }

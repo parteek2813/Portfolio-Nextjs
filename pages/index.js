@@ -21,6 +21,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { useEffect, useState } from "react";
 import ResumePopup from "../components/ResumePopup";
+import Footer from "../components/footer";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -211,6 +212,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
