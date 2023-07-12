@@ -42,24 +42,23 @@ function Work2() {
     {/* projects */}
       <div className={`${styles.projects} `}>
 
-
         <div className={styles.single}>
           <div className={styles.singleimg}>
             <img
-              className={styles.img}
-              src="https://ik.imagekit.io/hceym0jw8l/tunespot.png?updatedAt=1689153242692"
+             className={styles.img}
+              src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2320_.png?updatedAt=1689153681013"
               alt=""
             />
           </div>
           <div className={styles.singledetail}>
-            <h4 className={styles.h4}>TuneSpot- Music Player</h4>
-            <p className={styles.p4}>
-              <span className={styles.span}>About:</span> Tunespot allows users to discover and listen to music from various genres and artists and add favorites songs. <br />
+            <h4 className={styles.h4}>Swiggy Clone</h4>
+            <p className={styles.p}>
+              <span className={styles.span}>About:</span> A React.js web application Swiggy Clone, a popular online food ordering and delivery platform. <br />
               <br />
-              <span className={styles.span}>Tech Stack:</span> HTML, CSS , Bootstrap, ReactJs, React-Router-dom, Typescript, Keyclock.
+              <span className={styles.span}>Tech Stack:</span> React, Redux, Material UI, Firebase (OTP Authentication), React Router
             </p>
-            <div className={styles.buttonwrap}>
-             <button className={styles.button} onClick={() => window.open("https://github.com/parteek2813/Tunespot-ReactJs", '_blank')}> Visit &rarr; </button>
+            <div class={styles.buttonwrap}>
+              <button class={styles.button} onClick={() => window.open("https://github.com/parteek2813/Swiggy-ReactJs", '_blank')}>Visit &rarr;</button>
             </div>
           </div>
         </div>
@@ -74,42 +73,19 @@ function Work2() {
           </div>
           <div className={styles.singledetail}>
             <h4 className={styles.h4}>Pipar</h4>
-            <p className={styles.p4}>
+            <p className={styles.p}>
               <span className={styles.span}>About:</span> A Digital Web3 Platform For Tokenizing Company Shares/Stocks. These Assets Can Be Fungible Or Non-Fungible <br />
               <br />
               <span className={styles.span}>Tech Stack:</span> Javascript, SCSS, Typescript and others     
             </p>
-            <br />
+           
             <div className={styles.buttonwrap}>
               <button  className={styles.button} >Visit &rarr;</button>
             </div>
           </div>
         </div>
 
-
         <div className={styles.single}>
-          <div className={styles.singleimg}>
-            <img
-             className={styles.img}
-              src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2320_.png?updatedAt=1689153681013"
-              alt=""
-            />
-          </div>
-          <div className={styles.singledetail}>
-            <h4 className={styles.h4}>Swiggy Clone</h4>
-            <p className={styles.p4}>
-              <span className={styles.span}>About:</span> A React.js web application Swiggy Clone, a popular online food ordering and delivery platform. <br />
-              <br />
-              <span className={styles.span}>Tech Stack:</span> React, Redux, Material UI, Firebase (OTP Authentication), React Router
-            </p>
-            <br />
-            <div class={styles.buttonwrap}>
-              <button class={styles.button} onClick={() => window.open("https://github.com/parteek2813/Swiggy-ReactJs", '_blank')}>Visit &rarr;</button>
-            </div>
-          </div>
-        </div>
-
-        <div className={`${styles.single} ${styles.reverse}`}>
           <div className={styles.singleimg}>
             <img
              className={styles.img}
@@ -119,18 +95,18 @@ function Work2() {
           </div>
           <div className={styles.singledetail}>
             <h4 className={styles.h4}>Youtube</h4>
-            <p className={styles.p4}>
+            <p className={styles.p}>
               <span className={styles.span}>About:</span> This project is based on youtube clone implementing all the required functionalities needed for user <br />
               <br />
               <span className={styles.span}>Tech Stack:</span> React.js, Youtube-API, Redux, Jest for Testing , HTML, CSS, BrowserList for Compatiability, Web-vitals
             </p>
-            <br />
+         
             <div class={styles.buttonwrap}>
               <button class={styles.button} onClick={() => window.open("https://github.com/parteek2813/youtube-ReactJs", '_blank')}>Visit &rarr;</button>
             </div>
           </div>
         </div>
-        <div className={styles.single}>
+        <div className={`${styles.single} ${styles.reverse}`}>
           <div className={styles.singleimg}>
             <img
             className={styles.img}
@@ -140,17 +116,39 @@ function Work2() {
           </div>
           <div className={styles.singledetail}>
             <h4 className={styles.h4}> Hangman Game</h4>
-            <p className={styles.p4}>
+            <p className={styles.p}>
               <span className={styles.span}>About:</span>  It is an alphabet guessing game where user can play and with each wrong guess, hangman will be approaching the dead end. <br />
               <br />
               <span className={styles.span}>Tech Stack:</span> React, Node, Express, Axios, MongoDB, Mongoose
             </p>
-            <br />
+            
             <div class={styles.buttonwrap}>
               <button class={styles.button} onClick={() => window.open("https://github.com/parteek2813/React-hangman-with-backend-logic", '_blank')}>Visit &rarr;</button>
             </div>
           </div>
         </div>
+
+        <div className={styles.single}>
+          <div className={styles.singleimg}>
+            <img
+              className={styles.img}
+              src="https://ik.imagekit.io/hceym0jw8l/tunespot.png?updatedAt=1689153242692"
+              alt=""
+            />
+          </div>
+          <div className={styles.singledetail}>
+            <h4 className={styles.h4}>TuneSpot- Music Player</h4>
+            <p className={styles.p}>
+              <span className={styles.span}>About:</span> Tunespot allows users to discover and listen to music from various genres and artists and add favorites songs. <br />
+              <br />
+              <span className={styles.span}>Tech Stack:</span> HTML, CSS , Bootstrap, ReactJs, React-Router-dom, Typescript, Keyclock.
+            </p>
+            <div className={styles.buttonwrap}>
+             <button className={styles.button} onClick={() => window.open("https://github.com/parteek2813/Tunespot-ReactJs", '_blank')}> Visit &rarr; </button>
+            </div>
+          </div>
+        </div>
+
         <div className={`${styles.single} ${styles.reverse}`}>
           <div className={styles.singleimg}>
             <img
@@ -161,12 +159,12 @@ function Work2() {
           </div>
           <div className={styles.singledetail}>
             <h4 className={styles.h4}>Flamify- Realtime Chat App</h4>
-            <p className={styles.p4}>
+            <p className={styles.p}>
               <span className={styles.span}>About:</span> A real-time chat application built using React.js and Firebase enabling users to communicate through text messages and also provides voice chat functionality.<br />
               <br />
               <span className={styles.span}>Tech Stack:</span> React, Firebase, Material UI, WebRTC
             </p>
-            <br />
+            
             <div class={styles.buttonwrap}>
               <button class={styles.button} onClick={() => window.open("https://github.com/parteek2813/Flamify-Reactjs", '_blank')}>Visit &rarr;</button>
             </div>
