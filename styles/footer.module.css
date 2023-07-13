@@ -1,11 +1,13 @@
 .style_0 {
   align-items: center;
+  position: absolute;
   background: #14142a none repeat scroll 0% 0% / auto padding-box border-box;
   display: flex;
-  height: 93.6px;
+  height: 60.6px;
   justify-content: center;
   width: 100%;
   transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: hidden;
 }
 
 .style_1 {

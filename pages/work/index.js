@@ -10,6 +10,7 @@ function Work2() {
     <>
       {/* work-section */}
       <div className={styles.work}>
+        {/* header */}
         <div className={styles.header}>
           <motion.span
             variants={fadeIn("up", 0.2)}
@@ -257,6 +258,7 @@ function Work2() {
           </div>
         </motion.div>
       </div>
+
       <Footer />
     </>
   );
