@@ -142,7 +142,7 @@ const About = () => {
 
   return (
     <>
-      <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-hidden ">
+      <div className="h-full bg-primary/30 py-32 text-center xl:text-left  ">
         <Circles />
         {/* avatar image */}
         <motion.div
@@ -155,7 +155,7 @@ const About = () => {
           <Image src={"/avatar.png"} width={737} height={678}></Image>
         </motion.div>
 
-        <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+        <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 ">
           {/* text */}
           <div className="flex-1 flex flex-col justify-center mt-[50px]">
             <motion.h2
