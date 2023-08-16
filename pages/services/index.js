@@ -11,7 +11,7 @@ import Footer from "../../components/Footer";
 const Services = () => {
   return (
     <>
-      <div className="h-full bg-primary/30 py-36 flex  items-center ">
+      <div className="h-full bg-primary/30 py-36 flex flex-row items-center ">
         <Circles />
         <div className="mx-[250px] overflow-hidden flex">
           <div className="container mx-auto  overflow-hidden">
@@ -39,18 +39,15 @@ const Services = () => {
                 </motion.p>
               </div>
               {/* slider */}
-              {/* <motion.div
+              <motion.div
                 variants={fadeIn("down", 0.6)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
                 className="w-full h-[100%]  xl:max-w-[65%] "
-              > */}
-              <div className="w-full h-[100%] xl:max-w-[65%]">
-
+              >
                 <ServiceSlider />
-              </div>
-              {/* </motion.div> */}
+              </motion.div>
             </div>
           </div>
         </div>
