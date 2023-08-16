@@ -1,4 +1,5 @@
 import styles from "../../styles/work.module.scss";
+import Image from "next/image";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -58,11 +59,10 @@ function Work2() {
         >
           <div className={styles.single}>
             <div className={styles.singleimg}>
-              <img
-                className={styles.img}
-                src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2320_.png?updatedAt=1689153681013"
-                alt=""
-              />
+            <Image className={styles.img} src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2320_.png?updatedAt=1689153681013" 
+
+              width={100} height={100} unoptimized
+            />
             </div>
             <div className={styles.singledetail}>
               <h4 className={styles.h4}>Swiggy Clone</h4>
@@ -92,10 +92,8 @@ function Work2() {
 
           <div className={`${styles.single} ${styles.reverse}`}>
             <div className={styles.singleimg}>
-              <img
-                className={styles.img}
-                src="https://ik.imagekit.io/onyedika/slide/pipar_peinACEKO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256618"
-                alt=""
+            <Image className={styles.img} src="https://ik.imagekit.io/onyedika/slide/pipar_peinACEKO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256618"
+              width={100} height={100} alt="sample image" unoptimized={true}
               />
             </div>
             <div className={styles.singledetail}>
@@ -117,10 +115,8 @@ function Work2() {
 
           <div className={styles.single}>
             <div className={styles.singleimg}>
-              <img
-                className={styles.img}
-                src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2321_.png?updatedAt=1689153943360"
-                alt=""
+            <Image className={styles.img} src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2321_.png?updatedAt=1689153943360"
+              width={100} height={100} alt="sample image" unoptimized={true}
               />
             </div>
             <div className={styles.singledetail}>
@@ -152,10 +148,8 @@ function Work2() {
           </div>
           <div className={`${styles.single} ${styles.reverse}`}>
             <div className={styles.singleimg}>
-              <img
-                className={styles.img}
-                src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2322_.png?updatedAt=1689154304373"
-                alt=""
+            <Image className={styles.img} src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2322_.png?updatedAt=1689154304373"
+              width={100} height={100} alt="sample image" unoptimized={true}
               />
             </div>
             <div className={styles.singledetail}>
@@ -187,10 +181,8 @@ function Work2() {
 
           <div className={styles.single}>
             <div className={styles.singleimg}>
-              <img
-                className={styles.img}
-                src="https://ik.imagekit.io/hceym0jw8l/tunespot.png?updatedAt=1689153242692"
-                alt=""
+            <Image className={styles.img} src="https://ik.imagekit.io/hceym0jw8l/tunespot.png?updatedAt=1689153242692"
+              width={100} height={100} alt="sample image" unoptimized={true}
               />
             </div>
             <div className={styles.singledetail}>
@@ -222,10 +214,8 @@ function Work2() {
 
           <div className={`${styles.single} ${styles.reverse}`}>
             <div className={styles.singleimg}>
-              <img
-                className={styles.img}
-                src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2323_.png?updatedAt=1689154842879"
-                alt=""
+            <Image className={styles.img} src="https://ik.imagekit.io/hceym0jw8l/Screenshot__2323_.png?updatedAt=1689154842879"
+              width={100} height={100} alt="sample image" unoptimized={true}
               />
             </div>
             <div className={styles.singledetail}>
