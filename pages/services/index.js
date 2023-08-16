@@ -43,8 +43,9 @@ const Services = () => {
                 variants={fadeIn("down", 0.6)}
                 initial="hidden"
                 animate="show"
-                exit="hidden"
+                exit="show"
                 className="w-full h-[100%]  xl:max-w-[65%] "
+                
               >
                 <ServiceSlider />
               </motion.div>

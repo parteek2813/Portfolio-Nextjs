@@ -1,3 +1,5 @@
+"use server"
+
 import styles from "../../styles/work.module.scss";
 import Image from "next/image";
 
