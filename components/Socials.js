@@ -35,7 +35,7 @@ const Socials = () => {
           <RiLinkedinLine />
         </a>
       </Link>
-      <Link href={"https://leetcode.com/digitalparteek/"} legacyBehavior>
+      <Link href={"https://leetcode.com/devParteek/"} legacyBehavior>
         <a
           target="_blank"
           rel="noopener noreferrer"

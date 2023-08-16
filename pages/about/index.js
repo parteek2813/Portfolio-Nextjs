@@ -8,21 +8,23 @@ import {
   FaJs,
   FaReact,
   FaJava,
-  FaNodeJs,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiAdobephotoshop,
   SiTypescript,
   SiExpress,
   SiSequelize,
-  SiPostman,
   SiRabbitmq,
   SiMongodb,
   SiGit,
   SiGithub,
   SiMysql,
+  SiRedux,
+  SiTailwindcss,
+  SiNpm,
+  SiPrisma,
+  SiFirebase,
 } from "react-icons/si";
 
 import { BiLogoNodejs } from "react-icons/bi";
@@ -52,29 +54,30 @@ const aboutData = [
           <FaCss3 />,
           <FaJs />,
           <SiTypescript />,
-          <FaReact />,
-          <SiNextdotjs />,
           <FaJava />,
+          <TbBrandCpp />
         ],
       },
       {
         title: "Frameworks",
         icons: [
+          <FaReact />,
+          <SiNextdotjs />,
           <BiLogoNodejs />,
           <SiExpress />,
           <SiSequelize />,
-          <SiPostman />,
+          <SiRedux />,
           <SiRabbitmq />,
-          <SiMongodb />,
+          
         ],
       },
       {
         title: "Developer Tools",
-        icons: [<SiGit />, <SiGithub />],
+        icons: [<SiGit />, <SiGithub />, <SiTailwindcss />,<SiNpm />],
       },
       {
-        title: "Other",
-        icons: [<SiMysql />, <TbBrandCpp />],
+        title: "Databases",
+        icons: [<SiMysql />, <SiMongodb />,<SiPrisma />, <SiFirebase />],
       },
     ],
   },
@@ -101,23 +104,6 @@ const aboutData = [
       },
     ],
   },
-  // {
-  //   title: "experience",
-  //   info: [
-  //     {
-  //       title: "UX/UI Designer - XYZ Company",
-  //       stage: "2012 - 2023",
-  //     },
-  //     {
-  //       title: "Web Developer - ABC Agency",
-  //       stage: "2010 - 2012",
-  //     },
-  //     {
-  //       title: "Intern - DEF Corporation",
-  //       stage: "2008 - 2010",
-  //     },
-  //   ],
-  // },
   {
     title: "certificates",
     info: [
@@ -224,7 +210,7 @@ const About = () => {
                 {/* projects */}
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                    <CountUp start={0} end={40} duration={5} /> +
+                    <CountUp start={0} end={45} duration={5} /> +
                   </div>
 
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
